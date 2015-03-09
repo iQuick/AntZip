@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    
+	<LinearLayout 
+	    android:orientation="vertical" android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:padding="20dip"
+	    android:layout_centerInParent="true">
+	    
+	    <RadioGroup
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+		    <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioZip"
+                android:checked="true"
+                android:text="ZIP"/>
+		    
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioTar"
+                android:text="TAR"
+                android:layout_marginLeft="10dip"/>
+	    </RadioGroup>
+	    
+	    <Button android:text="压缩" android:id="@+id/button1"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:paddingLeft="30dip" android:paddingRight="30dip"></Button>
+	    <Button android:text="解压" android:id="@+id/button2"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:paddingLeft="30dip" android:paddingRight="30dip"
+	        android:layout_marginTop="20dip"></Button>
+	</LinearLayout>
+	
+    <TextView android:text="Made By Kris" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"></TextView>
+</RelativeLayout>

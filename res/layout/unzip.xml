@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical" android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true">
+	    <TextView android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" android:text="输入需要解压的文件，点击解压进行解压操作" />
+	    <EditText android:id="@+id/editText1" android:layout_height="wrap_content"
+	        android:layout_width="fill_parent">
+	    </EditText>
+	    <TextView android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" android:text="输入解压目标目录，如果为空则与zip文件目录一致" />
+	    <EditText android:id="@+id/editText2" android:layout_height="wrap_content"
+	        android:layout_width="fill_parent">
+	    </EditText>
+	    <Button android:text="解压" android:id="@+id/button"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"></Button>
+        <TextView android:text="" android:id="@+id/tv_tip"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"></TextView>
+	        
+	</LinearLayout>
+	
+    <TextView android:text="Made By Kris" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"></TextView>
+    </RelativeLayout>
